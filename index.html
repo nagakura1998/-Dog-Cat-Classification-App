@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.12.1/dist/ort.min.js"></script>
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="upload-box">
+            <input type="file" accept="image/*" hidden>
+            <img src="./icons8-add-image-64.png" alt="">
+            <p>Browse File to Upload</p>
+        </div>
+    </div>
+    <div style="margin-top:5px; text-align: center; font-weight: 900;">
+        <div style="color:#fff">
+          Result:
+          <div id=solution-container>
+  
+          </div>
+        </div>
+      </div>
+    <div class="modal">
+        <div class="kinetic"></div> 
+    </div>
+</body>
+</html>
